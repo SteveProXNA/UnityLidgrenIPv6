@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Unity\Editor\Unity.exe" -batchmode -nographics -quit -projectPath "." -executeMethod PerformBuild.CommandLineBuildOnCheckinAndroid -CustomArgs:Environment=IPv4;Version=1;BundleID=com.steveproxna.gameunity;VersionCode=1;SvnRevision=${SVN_REVISION};APKPath=build\com.steveproxna.gameunity.apk;HomeDirectory=.

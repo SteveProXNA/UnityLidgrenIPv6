@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BCF0855B-D4B3-4FB1-A952-C221D2669F0B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>GameServer</RootNamespace>
+    <AssemblyName>GameServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogManager.cs" />
+    <Compile Include="OrgProgram.cs" />
+    <Compile Include="TheProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Lidgren\Encryption\NetAESEncryption.cs" />
+    <Compile Include="Lidgren\Encryption\NetBlockEncryptionBase.cs" />
+    <Compile Include="Lidgren\Encryption\NetCryptoProviderBase.cs" />
+    <Compile Include="Lidgren\Encryption\NetDESEncryption.cs" />
+    <Compile Include="Lidgren\Encryption\NetEncryption.cs" />
+    <Compile Include="Lidgren\Encryption\NetRC2Encryption.cs" />
+    <Compile Include="Lidgren\Encryption\NetTripleDESEncryption.cs" />
+    <Compile Include="Lidgren\Encryption\NetXorEncryption.cs" />
+    <Compile Include="Lidgren\Encryption\NetXteaEncryption.cs" />
+    <Compile Include="Lidgren\NamespaceDoc.cs" />
+    <Compile Include="Lidgren\NetBigInteger.cs" />
+    <Compile Include="Lidgren\NetBitVector.cs" />
+    <Compile Include="Lidgren\NetBitWriter.cs" />
+    <Compile Include="Lidgren\NetBuffer.cs" />
+    <Compile Include="Lidgren\NetBuffer.Peek.cs" />
+    <Compile Include="Lidgren\NetBuffer.Read.cs" />
+    <Compile Include="Lidgren\NetBuffer.Read.Reflection.cs" />
+    <Compile Include="Lidgren\NetBuffer.Write.cs" />
+    <Compile Include="Lidgren\NetBuffer.Write.Reflection.cs" />
+    <Compile Include="Lidgren\NetClient.cs" />
+    <Compile Include="Lidgren\NetConnection.cs" />
+    <Compile Include="Lidgren\NetConnection.Handshake.cs" />
+    <Compile Include="Lidgren\NetConnection.Latency.cs" />
+    <Compile Include="Lidgren\NetConnection.MTU.cs" />
+    <Compile Include="Lidgren\NetConnectionStatistics.cs" />
+    <Compile Include="Lidgren\NetConnectionStatus.cs" />
+    <Compile Include="Lidgren\NetConstants.cs" />
+    <Compile Include="Lidgren\NetDeliveryMethod.cs" />
+    <Compile Include="Lidgren\NetException.cs" />
+    <Compile Include="Lidgren\NetFragmentationHelper.cs" />
+    <Compile Include="Lidgren\NetFragmentationInfo.cs" />
+    <Compile Include="Lidgren\NetIncomingMessage.cs" />
+    <Compile Include="Lidgren\NetIncomingMessageType.cs" />
+    <Compile Include="Lidgren\NetMessageType.cs" />
+    <Compile Include="Lidgren\NetNatIntroduction.cs" />
+    <Compile Include="Lidgren\NetOutgoingMessage.cs" />
+    <Compile Include="Lidgren\NetPeer.cs" />
+    <Compile Include="Lidgren\NetPeer.Discovery.cs" />
+    <Compile Include="Lidgren\NetPeer.Fragmentation.cs" />
+    <Compile Include="Lidgren\NetPeer.Internal.cs" />
+    <Compile Include="Lidgren\NetPeer.LatencySimulation.cs" />
+    <Compile Include="Lidgren\NetPeer.Logging.cs" />
+    <Compile Include="Lidgren\NetPeer.MessagePools.cs" />
+    <Compile Include="Lidgren\NetPeer.Send.cs" />
+    <Compile Include="Lidgren\NetPeerConfiguration.cs" />
+    <Compile Include="Lidgren\NetPeerStatistics.cs" />
+    <Compile Include="Lidgren\NetPeerStatus.cs" />
+    <Compile Include="Lidgren\NetQueue.cs" />
+    <Compile Include="Lidgren\NetRandom.cs" />
+    <Compile Include="Lidgren\NetRandom.Implementations.cs" />
+    <Compile Include="Lidgren\NetRandomSeed.cs" />
+    <Compile Include="Lidgren\NetReceiverChannelBase.cs" />
+    <Compile Include="Lidgren\NetReliableOrderedReceiver.cs" />
+    <Compile Include="Lidgren\NetReliableSenderChannel.cs" />
+    <Compile Include="Lidgren\NetReliableSequencedReceiver.cs" />
+    <Compile Include="Lidgren\NetReliableUnorderedReceiver.cs" />
+    <Compile Include="Lidgren\NetSenderChannelBase.cs" />
+    <Compile Include="Lidgren\NetSendResult.cs" />
+    <Compile Include="Lidgren\NetServer.cs" />
+    <Compile Include="Lidgren\NetSRP.cs" />
+    <Compile Include="Lidgren\NetStoredReliableMessage.cs" />
+    <Compile Include="Lidgren\NetTime.cs" />
+    <Compile Include="Lidgren\NetTuple.cs" />
+    <Compile Include="Lidgren\NetUnreliableSenderChannel.cs" />
+    <Compile Include="Lidgren\NetUnreliableSequencedReceiver.cs" />
+    <Compile Include="Lidgren\NetUnreliableUnorderedReceiver.cs" />
+    <Compile Include="Lidgren\NetUPnP.cs" />
+    <Compile Include="Lidgren\NetUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
