@@ -29,7 +29,9 @@ Special thanks to [Lidgren](https://github.com/lidgren/lidgren-network-gen3) for
 Thanks also goes to [jens-nolte](https://github.com/jens-nolte) for IPv6 Dual Mode.
 
 ###### BLOG
-For more infomation please check out the following blog post: http://bit.ly/ABCDEFG
+For more infomation please check out the following blog post:
+<br />
+http://steveproxna.blogspot.co.uk/2016/11/unity3d-and-ipv6-networking.html
 
 ###### CONTACT
 - Blog:		http://steveproxna.blogspot.com
